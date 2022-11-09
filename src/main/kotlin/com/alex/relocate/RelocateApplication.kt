@@ -5,7 +5,7 @@ import org.springframework.boot.autoconfigure.domain.EntityScan
 import org.springframework.boot.runApplication
 
 @SpringBootApplication
-@EntityScan("com.alex.model")
+@EntityScan("com.alex.relocate.db.entity")
 class RelocateApplication
 
 fun main(args: Array<String>) {
