@@ -1,13 +1,13 @@
 package com.alex.relocate
 
 import org.springframework.boot.autoconfigure.SpringBootApplication
-import org.springframework.boot.autoconfigure.domain.EntityScan
 import org.springframework.boot.runApplication
+import org.springframework.data.jpa.repository.config.EnableJpaRepositories
 
 @SpringBootApplication
-@EntityScan("com.alex.relocate.db.entity")
+@EnableJpaRepositories
 class RelocateApplication
 
 fun main(args: Array<String>) {
-	runApplication<RelocateApplication>(*args)
+    runApplication<RelocateApplication>(*args)
 }
