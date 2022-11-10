@@ -1,12 +1,14 @@
 package com.alex.relocate.db.entities
 import java.util.*
-import javax.persistence.Table
+import javax.persistence.Entity
+import javax.persistence.Id
 
-@Table(name = "users")
+@Entity
 data class UserEntity(
     val firstName: String,
     val lastName: String,
     val email: String,
     val password: String,
+    @Id
     val id: UUID = UUID.randomUUID(),
 )
