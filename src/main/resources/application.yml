@@ -1,7 +1,13 @@
+app:
+  jwt.secret: JKHIbhfg67stdfsdfy767tfsdfuyt8fsdyf
+
 server:
   port: 8080
 
 spring:
+  security:
+    basic:
+      enabled: false
   jpa:
     database: POSTGRESQL
     show-sql: true
